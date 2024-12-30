@@ -1,0 +1,768 @@
+[
+    {
+        "id": "8f9dfaa174abefe9",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "f8563db24dd0b5cc",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "c90a1cfa6b9e4929a050840ad458da07.s1.eu.hivemq.cloud",
+        "port": "8883",
+        "tls": "5fdcfa7f9f3d4de3",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "4dcdebdec9d65361",
+        "type": "ui_tab",
+        "name": "Home",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "25db206ce00d6a19",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "d2bc7615041b8687",
+        "type": "ui_group",
+        "name": "Led",
+        "tab": "4dcdebdec9d65361",
+        "order": 1,
+        "disp": true,
+        "width": "16",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5fdcfa7f9f3d4de3",
+        "type": "tls-config",
+        "name": "",
+        "cert": "",
+        "key": "",
+        "ca": "",
+        "certname": "",
+        "keyname": "",
+        "caname": "isrgrootx1.pem",
+        "servername": "",
+        "verifyservercert": true,
+        "alpnprotocol": ""
+    },
+    {
+        "id": "9fd978090bbf36e1",
+        "type": "ui_spacer",
+        "z": "8f9dfaa174abefe9",
+        "name": "spacer",
+        "group": "d2bc7615041b8687",
+        "order": 3,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "53bcca5668cdbf59",
+        "type": "ui_spacer",
+        "z": "8f9dfaa174abefe9",
+        "name": "spacer",
+        "group": "d2bc7615041b8687",
+        "order": 9,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "1bad459d3a2f34b7",
+        "type": "ui_spacer",
+        "z": "8f9dfaa174abefe9",
+        "name": "spacer",
+        "group": "d2bc7615041b8687",
+        "order": 10,
+        "width": 16,
+        "height": 1
+    },
+    {
+        "id": "c3f32bd98339c132",
+        "type": "mqtt out",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "topic": "esp32/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f8563db24dd0b5cc",
+        "x": 500,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "b2dc48187afdf604",
+        "type": "debug",
+        "z": "8f9dfaa174abefe9",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1060,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "89374d0e9160e472",
+        "type": "mqtt in",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "topic": "esp32/led",
+        "qos": "0",
+        "datatype": "auto-detect",
+        "broker": "f8563db24dd0b5cc",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 900,
+        "y": 520,
+        "wires": [
+            [
+                "b2dc48187afdf604"
+            ]
+        ]
+    },
+    {
+        "id": "cd348d84a696a2f0",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 1,
+        "width": 8,
+        "height": 5,
+        "passthru": false,
+        "label": "ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "ON",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 210,
+        "y": 60,
+        "wires": [
+            [
+                "c3f32bd98339c132"
+            ]
+        ]
+    },
+    {
+        "id": "6723aec9402b6abf",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 2,
+        "width": 8,
+        "height": 5,
+        "passthru": false,
+        "label": "OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "OFF",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 210,
+        "y": 100,
+        "wires": [
+            [
+                "c3f32bd98339c132"
+            ]
+        ]
+    },
+    {
+        "id": "7410116cbdfb39af",
+        "type": "ui_numeric",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "label": "Hour",
+        "tooltip": "",
+        "group": "d2bc7615041b8687",
+        "order": 13,
+        "width": 8,
+        "height": 2,
+        "wrap": true,
+        "passthru": true,
+        "topic": "hour",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "23",
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 400,
+        "wires": [
+            [
+                "8ae4ad83a43e1bdc"
+            ]
+        ]
+    },
+    {
+        "id": "8bc4028f38d26eaf",
+        "type": "ui_numeric",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "label": "Minute",
+        "tooltip": "",
+        "group": "d2bc7615041b8687",
+        "order": 14,
+        "width": 8,
+        "height": 2,
+        "wrap": true,
+        "passthru": true,
+        "topic": "minute",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "59",
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 440,
+        "wires": [
+            [
+                "8ae4ad83a43e1bdc"
+            ]
+        ]
+    },
+    {
+        "id": "c7970ab373f16a4f",
+        "type": "mqtt out",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "topic": "esp32/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f8563db24dd0b5cc",
+        "x": 680,
+        "y": 500,
+        "wires": []
+    },
+    {
+        "id": "a27a5175fdcf6387",
+        "type": "ui_text",
+        "z": "8f9dfaa174abefe9",
+        "group": "d2bc7615041b8687",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Alarm",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 670,
+        "y": 400,
+        "wires": []
+    },
+    {
+        "id": "f1b34822b0823186",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 12,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Alarm ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "AON",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 220,
+        "y": 480,
+        "wires": [
+            [
+                "8ae4ad83a43e1bdc"
+            ]
+        ]
+    },
+    {
+        "id": "a1359522f7a048d1",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 11,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Alarm OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "AOFF",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 230,
+        "y": 520,
+        "wires": [
+            [
+                "8ae4ad83a43e1bdc"
+            ]
+        ]
+    },
+    {
+        "id": "8ae4ad83a43e1bdc",
+        "type": "function",
+        "z": "8f9dfaa174abefe9",
+        "name": "Alarm",
+        "func": "// Check what the input source is\nif (msg.topic === \"hour\") {\n    // Store minutes in the flow context\n    flow.set(\"hour\", msg.payload);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"Hour set: \" + msg.payload });\n} else if (msg.topic === \"minute\") {\n    // Store seconds in the flow context\n    flow.set(\"minuteA\", msg.payload);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"Minute set: \" + msg.payload });\n} else if (msg.payload === \"AON\") {\n    // Retrieve stored minutes and seconds\n    var hour = flow.get(\"hour\") || 0;\n    var minute = flow.get(\"minuteA\") || 0;\n    flow.set(\"statusA\", \"ON\");\n    \n    node.status({ fill: \"green\", shape: \"dot\", text: `LED ON at ${hour}:${minute}` });\n    msg.payload = `LED ON at ${hour}:${minute}`; // Pass total time for next node\n    return msg;\n} else if (msg.payload === \"AOFF\") {\n    // Retrieve stored minutes and seconds\n    var hour = flow.get(\"hour\") || 0;\n    var minute = flow.get(\"minuteA\") || 0;\n    flow.set(\"statusA\", \"OFF\");\n   \n    node.status({ fill: \"green\", shape: \"dot\", text: `LED OFF at ${hour}:${minute}` });\n    msg.payload = `LED OFF at ${hour}:${minute}`; // Pass total time for next node\n    return msg;\n}    else {\n    var status = flow.get(\"statusA\");\n    let now = new Date();\n    let hours = now.getHours().toString().padStart(2, '0');\n    let minutes = now.getMinutes().toString().padStart(2, '0');\n    if (hours == flow.get(\"hour\") && minutes == flow.get(\"minuteA\")){\n        msg.payload = status;\n        if(status != \"NONE\"){\n        flow.set(\"statusA\",\"NONE\")\n        return msg;\n        }\n    }\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 460,
+        "wires": [
+            [
+                "a27a5175fdcf6387",
+                "c7970ab373f16a4f"
+            ]
+        ]
+    },
+    {
+        "id": "f2f273bf55357f65",
+        "type": "inject",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "count",
+        "payloadType": "str",
+        "x": 350,
+        "y": 560,
+        "wires": [
+            [
+                "8ae4ad83a43e1bdc"
+            ]
+        ]
+    },
+    {
+        "id": "104a1cc6357ef76c",
+        "type": "function",
+        "z": "8f9dfaa174abefe9",
+        "name": "Countdown",
+        "func": "// Check what the input source is\nif (msg.topic === \"minutes\") {\n    // Store minutes in the flow context\n    flow.set(\"minutes\", msg.payload);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"Minutes set: \" + msg.payload });\n} else if (msg.topic === \"seconds\") {\n    // Store seconds in the flow context\n    flow.set(\"seconds\", msg.payload);\n    node.status({ fill: \"blue\", shape: \"dot\", text: \"Seconds set: \" + msg.payload });\n} else if (msg.payload === \"CON\") {\n    // Retrieve stored minutes and seconds\n    var minutes = flow.get(\"minutes\") || 0;\n    var seconds = flow.get(\"seconds\") || 0;\n\n    // Total countdown time in seconds\n    var totalTime = (minutes * 60) + seconds;\n    flow.set(\"count\", totalTime);\n    flow.set(\"status\", \"ON\");\n    \n    node.status({ fill: \"green\", shape: \"dot\", text: \"Countdown ON started: \" + totalTime + \" seconds\" });\n    msg.payload = `LED ON in ${totalTime}`; // Pass total time for next node\n    return msg;\n} else if (msg.payload === \"COFF\") {\n    // Retrieve stored minutes and seconds\n    var minutes = flow.get(\"minutes\") || 0;\n    var seconds = flow.get(\"seconds\") || 0;\n    \n    // Total countdown time in seconds\n    var totalTime = (minutes * 60) + seconds;\n    flow.set(\"count\", totalTime);\n    flow.set(\"status\", \"OFF\");\n    \n    node.status({ fill: \"green\", shape: \"dot\", text: \"Countdown OFF started: \" + totalTime + \" seconds\" });\n    msg.payload = `LED OFF in ${totalTime}`; // Pass total time for next node\n    return msg;\n}    else {\n    var time = flow.get(\"count\") - 1;\n    var status = flow.get(\"status\")\n    flow.set(\"count\",time)\n    if(time>-1){\n    msg.payload = `LED ${status} in ${time}`; // Pass total time for next node\n    return msg;\n    }\n    else if(status != \"NONE\"){\n    msg.payload = status;\n    flow.set(\"status\",\"NONE\")\n    return msg;\n    }\n}\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 530,
+        "y": 240,
+        "wires": [
+            [
+                "e2721f0531d86ed2",
+                "e66a1a8cf6c10feb"
+            ]
+        ]
+    },
+    {
+        "id": "ac9c7eaf11760e6d",
+        "type": "ui_numeric",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "label": "Minute",
+        "tooltip": "",
+        "group": "d2bc7615041b8687",
+        "order": 6,
+        "width": 8,
+        "height": 2,
+        "wrap": true,
+        "passthru": true,
+        "topic": "minutes",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "59",
+        "step": 1,
+        "className": "",
+        "x": 210,
+        "y": 200,
+        "wires": [
+            [
+                "104a1cc6357ef76c"
+            ]
+        ]
+    },
+    {
+        "id": "f46f4942cef6d62c",
+        "type": "ui_numeric",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "label": "Second",
+        "tooltip": "",
+        "group": "d2bc7615041b8687",
+        "order": 7,
+        "width": 8,
+        "height": 2,
+        "wrap": true,
+        "passthru": true,
+        "topic": "seconds",
+        "topicType": "str",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "59",
+        "step": 1,
+        "className": "",
+        "x": 220,
+        "y": 240,
+        "wires": [
+            [
+                "104a1cc6357ef76c"
+            ]
+        ]
+    },
+    {
+        "id": "7e8184a9fa89b916",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 5,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Countdown ON",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "CON",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 240,
+        "y": 280,
+        "wires": [
+            [
+                "104a1cc6357ef76c"
+            ]
+        ]
+    },
+    {
+        "id": "c5210aaf1ef3026a",
+        "type": "ui_button",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "group": "d2bc7615041b8687",
+        "order": 4,
+        "width": 8,
+        "height": 1,
+        "passthru": false,
+        "label": "Countdown OFF",
+        "tooltip": "",
+        "color": "",
+        "bgcolor": "",
+        "className": "",
+        "icon": "",
+        "payload": "COFF",
+        "payloadType": "str",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "x": 240,
+        "y": 320,
+        "wires": [
+            [
+                "104a1cc6357ef76c"
+            ]
+        ]
+    },
+    {
+        "id": "e2721f0531d86ed2",
+        "type": "ui_text",
+        "z": "8f9dfaa174abefe9",
+        "group": "d2bc7615041b8687",
+        "order": 8,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Countdown Display",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "className": "",
+        "style": false,
+        "font": "",
+        "fontSize": 16,
+        "color": "#000000",
+        "x": 770,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "444cc88ea384eb2e",
+        "type": "inject",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "count",
+        "payloadType": "str",
+        "x": 370,
+        "y": 360,
+        "wires": [
+            [
+                "104a1cc6357ef76c"
+            ]
+        ]
+    },
+    {
+        "id": "074e0f6d26d32f80",
+        "type": "ui_switch",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "label": "Enable Ultrasonic",
+        "tooltip": "",
+        "group": "d2bc7615041b8687",
+        "order": 15,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "esp32/led",
+        "topicType": "msg",
+        "style": "",
+        "onvalue": "ENABLE",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "DISABLE",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 890,
+        "y": 420,
+        "wires": [
+            [
+                "017089b932e1887f"
+            ]
+        ]
+    },
+    {
+        "id": "e66a1a8cf6c10feb",
+        "type": "mqtt out",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "topic": "esp32/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f8563db24dd0b5cc",
+        "x": 800,
+        "y": 260,
+        "wires": []
+    },
+    {
+        "id": "017089b932e1887f",
+        "type": "mqtt out",
+        "z": "8f9dfaa174abefe9",
+        "name": "",
+        "topic": "esp32/led",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "f8563db24dd0b5cc",
+        "x": 1120,
+        "y": 420,
+        "wires": []
+    }
+]
