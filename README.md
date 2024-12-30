@@ -8,13 +8,23 @@ Cầu thang bộ là một phần không thể thiếu với bất kì cơ sở 
 
 Node-red flow:
 ![Ảnh flow node-red](./media/node-red-flow.png)
+
+
 ![File mã node-red](./flows.json)
+
+
 ![Dashboard](./media/dashboard.png)
 
 Sơ đồ và chuẩn bị ứng dụng:
 ![Flowchart](./media/Flowchart.png)
+
+
 ![Ảnh chụp mạch sử dụng](./media/board.jpg)
+
+
 ![hivemq](./media/hivemq.png)
+
+
 ![Sơ đồ khối](./media/Sơ%20đồ%20khối.png)
 
 
