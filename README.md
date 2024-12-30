@@ -7,15 +7,15 @@ Nội dung: Hệ thống đèn tự động tuỳ chỉnh cho nhà
 Cầu thang bộ là một phần không thể thiếu với bất kì cơ sở hay nhà ở nào có nhiều tầng. Việc thiếu ánh sáng ở cầu thang dù chỉ trong thời gian ngắn có thể ảnh hưởng tới sinh hoạt và gây nguy hiểm cho nguời sử dụng, đặc biệt trong trường hợp ta có nhu cầu di chuyển đồ vật không tiện sử dụng công tắc bấm. Do đó, việc có hệ thống bật tắt đèn tự động là cần thiết để đảm bảo an toàn cho người sử dụng, có thể được sử dụng trong hầu hết cơ sở hạ tầng, kinh doanh hay nhà ở và cả chung cư. Việc sử dụng timer đảm bảo việc tắt đèn chỉ xảy ra sau khi sensor không phát hiện người trong 10s liên tục. Kết hợp sử dụng MQTT và node-red dashboard để cài đặt thêm các timer hoặc đặt thời gian điều khiển đèn để đảm bảo một số phần không gian đặc biệt cần chiếu sáng trong một khoảng thời điểm nhất định trong ngày.
 
 Node-red flow:
-![Ảnh flow node-red](../Final/media/node-red-flow.png)
-![File mã node-red](flows.json)
-![Dashboard](../Final/media/dashboard.png)
+![Ảnh flow node-red](./media/node-red-flow.png)
+![File mã node-red](./flows.json)
+![Dashboard](./media/dashboard.png)
 
 Sơ đồ và chuẩn bị ứng dụng:
-![Flowchart](../Final/media/Flowchart.png)
-![Ảnh chụp mạch sử dụng](../Final/media/board.jpg)
-![hivemq](../Final/media/hivemq.png)
-![Sơ đồ khối](../Final/media/Sơ%20đồ%20khối.png)
+![Flowchart](./media/Flowchart.png)
+![Ảnh chụp mạch sử dụng](./media/board.jpg)
+![hivemq](./media/hivemq.png)
+![Sơ đồ khối](./media/Sơ%20đồ%20khối.png)
 
 
 
